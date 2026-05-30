@@ -1,0 +1,208 @@
+import Link from 'next/link'
+import Image from 'next/image'
+import IphoneMockup from '@/public/images/iphone-mockup.png'
+
+export default function Hero() {
+  return (
+    <section className="relative">
+      {/* Bg */}
+      <div
+        className="absolute inset-0 rounded-bl-[100px] mb-28 md:mb-0 bg-linear-to-tr from-purple-700 to-purple-600 pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="pt-36 md:pt-44 pb-24 md:pb-32">
+          <div className="md:grid md:grid-cols-12 md:gap-10 lg:gap-16 items-center">
+
+            {/* Copy column */}
+            <div className="md:col-span-7 text-center md:text-left mb-16 md:mb-0">
+              {/* Eyebrow */}
+              <p
+                className="inline-block text-[11px] uppercase tracking-[0.2em] text-brand-accent font-bold mb-6 px-3 py-1.5 rounded-full bg-purple-900/40 ring-1 ring-purple-400/30"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
+                The ultimate app for social contests
+              </p>
+
+              {/* Headline */}
+              <h1
+                className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.05] tracking-tight"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Fans participate.<br />
+                Brands engage.<br />
+                <span className="relative inline-flex items-center justify-center">
+                  <svg className="absolute -z-10" width="246" height="76" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M55.224 10.087c-13.986 3.38-25.552 7.614-33.97 12.438-4.171 2.412-7.508 4.953-9.953 7.58-2.395 2.628-3.807 5.332-4.21 8.058-.266 1.99.075 3.985 1.02 5.955.922 1.973 2.37 3.919 4.327 5.819 7.028 6.749 20.696 12.657 39.108 16.904 18.475 4.28 40.791 6.693 63.89 6.91 20.527.186 40.83-1.353 58.737-4.452 11.396-1.964 21.73-4.463 30.631-7.407 8.905-2.941 16.508-6.232 22.611-9.788 3.663-2.222 4.978-1.73 3.59.491-1.13 1.509-2.83 2.971-5.067 4.357-3.235 1.976-7.254 3.82-11.962 5.49-4.686 1.628-9.745 3.15-15.139 4.553a273.749 273.749 0 0 1-17.309 3.752 339.58 339.58 0 0 1-19.111 2.822c-3.367.35-6.676.738-10.087 1.025-3.412.286-6.868.546-10.339.75-13.955.815-28.266.87-42.283.165-13.996-.735-27.452-2.236-39.729-4.435-14.867-2.672-27.78-6.263-37.927-10.548-10.21-4.343-17.115-9.34-20.204-14.618C.15 43.028-.38 40.095.268 37.176c.295-1.462.868-2.917 1.713-4.357.883-1.432 2.027-2.847 3.427-4.239 2.819-2.783 6.622-5.463 11.342-7.99 4.626-2.528 10.101-4.9 16.335-7.074C48.423 8.116 68.15 4.072 90.24 1.802A371.99 371.99 0 0 1 115.924.135c54.806-1.437 105.87 8.691 124.34 24.662 1.911 1.728 3.392 3.498 4.431 5.295 1.352 2.388 1.655 4.82.901 7.234-.223 1.092-1.189 2.158-2.836 3.127-.493.309-1.076.603-1.742.88-.916.272-1.27-.27-1.344-1.462-.074-1.193 0-3.05-.429-5.409-.722-3.525-3.213-6.994-7.384-10.284-4.32-3.334-10.299-6.44-17.723-9.206-7.488-2.813-16.364-5.247-26.304-7.211-9.952-1.996-20.87-3.493-32.344-4.434-17.147-1.405-35.144-1.505-52.444-.292-8.673.62-17.094 1.537-25.108 2.732-7.997 1.207-15.556 2.672-22.552 4.37l-.162-.05Z"
+                      fill="#fcdd23"
+                      fillRule="nonzero"
+                    />
+                  </svg>
+                  Champions emerge.
+                </span>
+              </h1>
+
+              {/* Subhead */}
+              <p
+                className="text-lg md:text-xl text-purple-200 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                A social contest platform powered by communities and brands. Free quiz contests, real rewards, charity-first — built for fans who'd rather play than scroll past another ad.
+              </p>
+
+              {/* Buttons */}
+              <div
+                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div>
+                  <Link className="btn-sm w-full inline-flex items-center text-slate-100 bg-slate-800 hover:bg-slate-900 group shadow-xs" href="#">
+                    Get the app
+                    <span className="tracking-normal text-brand-accent group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
+                      <svg className="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
+                      </svg>
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    className="btn-sm w-full inline-flex items-center text-white bg-linear-to-tr from-purple-400 hover:bg-purple-600 shadow-xs relative before:absolute before:inset-0 before:bg-purple-400/60 before:-z-10 before:rounded-full"
+                    href="#how-it-works"
+                  >
+                    How it works
+                  </Link>
+                </div>
+              </div>
+
+              {/* Trust strip */}
+              <div
+                className="grid grid-cols-3 gap-4 max-w-xl mx-auto md:mx-0 border-t border-purple-400/20 pt-6"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div>
+                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none">FREE</p>
+                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">To play, always</p>
+                </div>
+                <div>
+                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none">24h</p>
+                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">Rewards dispatched</p>
+                </div>
+                <div>
+                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none">0</p>
+                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">Tolerance for gambling</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Phone mockup column */}
+            <div
+              className="md:col-span-5 flex justify-center md:justify-end"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div className="relative w-full max-w-[280px] sm:max-w-[320px]">
+                <div className="relative" style={{ aspectRatio: '344 / 674' }}>
+                  {/* Mock screen content (positioned to fit inside the iPhone frame's screen area) */}
+                  <div
+                    className="absolute bg-brand-bg overflow-hidden flex flex-col"
+                    style={{ top: '3.7%', bottom: '3.7%', left: '8.1%', right: '8.1%', borderRadius: '7%' }}
+                  >
+                    {/* Status bar */}
+                    <div className="px-4 pt-3 flex justify-between items-center text-[9px] font-bold text-slate-700">
+                      <span>9:41</span>
+                      <span className="flex items-center gap-1">
+                        <span className="inline-block w-3 h-1.5 rounded-sm bg-slate-700" />
+                        <span className="inline-block w-1 h-1 rounded-full bg-slate-700" />
+                        <span className="inline-block w-3 h-1.5 border border-slate-700 rounded-sm" />
+                      </span>
+                    </div>
+
+                    {/* Header */}
+                    <div className="px-4 pt-4">
+                      <p className="text-[8px] font-bold uppercase tracking-[0.15em] text-brand-primary">Fans Contest</p>
+                      <p className="text-base font-bold text-slate-900 leading-tight mt-1">Active contests</p>
+                      <p className="text-[10px] text-slate-500 mt-0.5">3 starting in the next hour</p>
+                    </div>
+
+                    {/* Cards */}
+                    <div className="flex-1 px-3 pt-3 space-y-2">
+                      <div className="bg-white rounded-xl p-2.5 shadow-sm border border-slate-100">
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 rounded-lg bg-brand-accent flex items-center justify-center text-xs font-extrabold text-slate-900 shrink-0">B</div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-[9px] text-slate-500 leading-none">Brand quiz · 15q</p>
+                            <p className="text-xs font-bold text-slate-900 truncate mt-1">Know your team</p>
+                          </div>
+                          <span className="text-[8px] font-bold text-white bg-brand-success px-1.5 py-0.5 rounded shrink-0">LIVE</span>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-2.5 shadow-sm border border-slate-100">
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 rounded-lg bg-brand-info flex items-center justify-center text-xs font-extrabold text-white shrink-0">N</div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-[9px] text-slate-500 leading-none">NPO charity · 10q</p>
+                            <p className="text-xs font-bold text-slate-900 truncate mt-1">Lagos coastal cleanup</p>
+                          </div>
+                          <span className="text-[8px] font-bold text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded shrink-0">12m</span>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-2.5 shadow-sm border border-slate-100">
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 rounded-lg bg-brand-primary flex items-center justify-center text-xs font-extrabold text-white shrink-0">S</div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-[9px] text-slate-500 leading-none">Sponsor channel · 20q</p>
+                            <p className="text-xs font-bold text-slate-900 truncate mt-1">Music trivia: '00s</p>
+                          </div>
+                          <span className="text-[8px] font-bold text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded shrink-0">45m</span>
+                        </div>
+                      </div>
+
+                      <div className="bg-white rounded-xl p-2.5 shadow-sm border border-slate-100 opacity-70">
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 rounded-lg bg-brand-secondary flex items-center justify-center text-xs font-extrabold text-white shrink-0">F</div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-[9px] text-slate-500 leading-none">Friends channel · 8q</p>
+                            <p className="text-xs font-bold text-slate-900 truncate mt-1">Weekly culture</p>
+                          </div>
+                          <span className="text-[8px] font-bold text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded shrink-0">1h 22m</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* CTA */}
+                    <div className="px-3 pb-4 pt-2">
+                      <button className="w-full rounded-xl bg-brand-primary py-2.5 text-white text-xs font-bold tracking-wide shadow-sm">
+                        Enrol now
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* iPhone frame */}
+                  <Image
+                    src={IphoneMockup}
+                    alt="Fans Contest mobile app"
+                    fill
+                    sizes="(max-width: 768px) 280px, 320px"
+                    className="object-contain pointer-events-none relative"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
