@@ -11,7 +11,7 @@ export default function Hero() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="pt-[7rem] md:pt-[8rem] pb-16 md:pb-24">
+        <div className="pt-[10rem] md:pt-[11rem] pb-16 md:pb-24">
           <div className="md:grid md:grid-cols-12 md:gap-10 lg:gap-16 items-center">
 
             {/* Copy column */}
