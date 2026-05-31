@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import QuoteAuthor from '@/public/images/quote-author-02.jpg'
-import Features from '@/public/images/features-03.png'
+import AppMockup from '@/public/images/app-2.png'
 
 export default function Section03() {
   return (
@@ -58,14 +58,13 @@ export default function Section03() {
               </div>
 
               {/* Image */}
-              <div className="w-full max-w-sm md:max-w-none md:mr-8 mt-8 md:mt-0">
-                <div className="relative -mx-8 md:mx-0">
+              <div className="w-full md:flex md:justify-center md:mr-8 mt-8 md:mt-0">
+                <div className="relative max-w-[260px] sm:max-w-[300px] mx-auto">
                   <Image
-                    src={Features}
-                    className="md:max-w-none"
-                    width={496}
-                    height={496}
-                    alt="Features 03"
+                    src={AppMockup}
+                    alt="Fans Contest mobile app — Events list"
+                    className="w-full h-auto drop-shadow-2xl"
+                    sizes="(max-width: 768px) 260px, 300px"
                     data-aos="fade-up"
                     data-aos-anchor="[data-aos-id-3]"
                   />
