@@ -1,174 +1,108 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Illustration from '@/public/images/footer-illustration.svg'
+import Logo from '@/public/images/logo.png'
+
+const LEGAL = [
+  { label: 'Terms', href: '/terms' },
+  { label: 'Privacy', href: '/privacy' },
+  { label: 'Cookies', href: '/cookies' },
+  { label: 'Disclaimer', href: '/disclaimer' },
+  { label: 'Imprint', href: '/imprint' },
+]
+
+const SOCIALS = [
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/fanscontest/',
+    icon: (
+      <svg className="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.023 0H1.977A1.977 1.977 0 0 0 0 1.977v12.046C0 15.115.885 16 1.977 16h6.498V9.91H6.408V7.59h2.067V5.857c0-2.047 1.252-3.16 3.077-3.16.875 0 1.626.064 1.845.094v2.14h-1.266c-.993 0-1.185.47-1.185 1.163V7.59h2.367L13 9.91h-2.054V16h3.077A1.977 1.977 0 0 0 16 14.023V1.977A1.977 1.977 0 0 0 14.023 0Z" />
+      </svg>
+    ),
+  },
+  {
+    label: 'X',
+    href: 'https://twitter.com/fanscontest',
+    icon: (
+      <svg className="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.6 0h2.454l-5.36 6.13L16 14.667h-4.937l-3.867-5.054-4.424 5.054H.317l5.733-6.554L0 0h5.063l3.495 4.622L12.6 0Zm-.86 13.2h1.36L4.32 1.4H2.86l8.88 11.8Z" />
+      </svg>
+    ),
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/fanscontest_official/',
+    icon: (
+      <svg className="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003Zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002Zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92Zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217Zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334Z" />
+      </svg>
+    ),
+  },
+  {
+    label: 'Email',
+    href: 'mailto:contact@fanscontest.com',
+    icon: (
+      <svg className="w-4 h-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1Zm-.5 1L8 8.86 2.5 4h11ZM2 12V4.62l5.65 4.94a.5.5 0 0 0 .7 0L14 4.62V12H2Z" />
+      </svg>
+    ),
+  },
+]
 
 export default function Footer() {
   return (
     <footer className="relative">
-      {/* Bg */}
       <div className="absolute inset-0 bg-slate-800 -z-10" aria-hidden="true" />
 
-      {/* Illustration */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none -z-10" aria-hidden="true">
-        <Image className="max-w-none" src={Illustration} alt="Footer illustration" />
-      </div>
-
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Blocks */}
-        <div className="grid sm:grid-cols-12 lg:grid-cols-10 gap-8 py-8 border-t border-slate-700">
-          {/* 1st block */}
-          <div className="sm:col-span-12 lg:col-span-2 lg:max-w-xs">
-            {/* Logo */}
-            <Link className="block" href="/" aria-label="Cruip">
-              <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                <g fillRule="nonzero" fill="none">
-                  <g className="fill-purple-600" transform="translate(3 3)">
-                    <circle cx="5" cy="5" r="5" />
-                    <circle cx="19" cy="5" r="5" />
-                    <circle cx="5" cy="19" r="5" />
-                    <circle cx="19" cy="19" r="5" />
-                  </g>
-                  <g className="fill-sky-300">
-                    <circle cx="15" cy="5" r="5" />
-                    <circle cx="25" cy="15" r="5" />
-                    <circle cx="15" cy="25" r="5" />
-                    <circle cx="5" cy="15" r="5" />
-                  </g>
-                </g>
-              </svg>
+        <div className="py-8 border-t border-slate-700">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+            {/* Brand */}
+            <Link href="/" className="inline-flex items-center gap-2.5 group" aria-label="Fans Contest">
+              <Image
+                src={Logo}
+                alt=""
+                width={32}
+                height={32}
+                className="rounded-md shadow-sm transition-transform duration-150 group-hover:scale-105"
+              />
+              <span className="font-bold text-white tracking-tight">Fans Contest</span>
             </Link>
-          </div>
 
-          {/* 2nd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-100 font-bold mb-3">Essentials</h6>
-            <ul className="text-sm font-[450] space-y-2">
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Payments
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Budgeting and analytics
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Open banking
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Pockets
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Subscriptions
-                </a>
-              </li>
+            {/* Legal links */}
+            <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-400">
+              {LEGAL.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-white transition">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            {/* Socials */}
+            <ul className="flex items-center gap-3">
+              {SOCIALS.map((s) => (
+                <li key={s.label}>
+                  <a
+                    href={s.href}
+                    target={s.href.startsWith('http') ? '_blank' : undefined}
+                    rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    aria-label={s.label}
+                    className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-slate-700 text-slate-300 hover:bg-purple-600 hover:text-white transition"
+                  >
+                    {s.icon}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-100 font-bold mb-3">Company</h6>
-            <ul className="text-sm font-[450] space-y-2">
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  About us
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Diversity / Inclusion
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Sustainability
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Code of conduct
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Financial statements
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* 4th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-100 font-bold mb-3">Lifestyle</h6>
-            <ul className="text-sm font-[450] space-y-2">
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  International products
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Currency exchange
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Lounge & Smart delay
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* 5th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-100 font-bold mb-3">Company</h6>
-            <ul className="text-sm font-[450] space-y-2">
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Send us an email
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a className="text-slate-400 hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-                  TikTok
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Bottom area */}
-        <div className="pb-4 md:pb-8">
-          <div className="text-xs text-slate-500">
-            If you would like to find out more about which entity you receive services from please click{' '}
-            <a className="font-medium underline hover:text-purple-600 transition duration-150 ease-in-out" href="#0">
-              here
-            </a>{' '}
-            If you have any other questions, please reach out to us via the in-app chat. Custom Bank is a bank established in the Republic of Ireland.
-            Custom Bank is licensed by the European Central Bank and regulated by the Bank of Ireland. Cusom Bank provides credit, payment, current
-            account and demand deposit account services.
-          </div>
+          {/* Copyright */}
+          <p className="mt-6 text-xs text-slate-500">
+            © {new Date().getFullYear()} Fans Contest. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
