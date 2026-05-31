@@ -10,7 +10,7 @@ export default function Header() {
 
           {/* Site branding */}
           <div className="shrink-0 mr-4">
-            <Link className="inline-flex items-center gap-3 group" href="/" aria-label="Fans Contest">
+            <Link className="inline-flex items-center gap-4 group" href="/" aria-label="Fans Contest">
               <Image
                 src={Logo}
                 alt=""
@@ -29,9 +29,14 @@ export default function Header() {
           <nav className="flex grow">
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className="ml-3">
-                <Link className="btn-sm inline-flex items-center text-slate-100 bg-slate-800 hover:bg-slate-900 shadow-xs" href="#">
-                  Get the app
-                </Link>
+                <a
+                  href="https://soucher.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-[11px] uppercase tracking-[0.2em] text-brand-accent font-bold px-3 py-1.5 rounded-full bg-purple-900/40 ring-1 ring-purple-400/30 hover:bg-purple-900/60 hover:ring-purple-400/50 transition"
+                >
+                  Powered by Soucher
+                </a>
               </li>
             </ul>
           </nav>

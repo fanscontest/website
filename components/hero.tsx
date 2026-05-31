@@ -98,18 +98,6 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Powered by Soucher */}
-              <a
-                href="https://soucher.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-[2.75rem] text-[11px] uppercase tracking-[0.2em] text-brand-accent font-bold px-3 py-1.5 rounded-full bg-purple-900/40 ring-1 ring-purple-400/30 hover:bg-purple-900/60 hover:ring-purple-400/50 transition"
-                data-aos="fade-up"
-                data-aos-anchor="#hero-title"
-                data-aos-delay="500"
-              >
-                Powered by Soucher
-              </a>
             </div>
 
             {/* Phone mockup column */}
