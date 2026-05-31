@@ -110,7 +110,7 @@ export default function Hero() {
                 <Image
                   src={AppMockup}
                   alt="Fans Contest mobile app — home screen"
-                  className="w-full h-auto drop-shadow-2xl"
+                  className="w-full h-auto drop-shadow-xl"
                   priority
                   sizes="(max-width: 768px) 280px, 320px"
                 />
