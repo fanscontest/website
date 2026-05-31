@@ -8,7 +8,7 @@ export default function Section05() {
       <div className="relative max-w-7xl mx-auto">
         {/* Bg */}
         <div
-          className="absolute inset-0 rounded-tr-[100px] bg-linear-to-tr from-purple-700 to-purple-600 pointer-events-none -z-10"
+          className="absolute inset-0 rounded-tr-[100px] bg-linear-to-tr from-brand-primary to-brand-secondary pointer-events-none -z-10"
           aria-hidden="true"
         />
 

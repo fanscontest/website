@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative">
       {/* Bg */}
       <div
-        className="absolute inset-0 rounded-bl-[100px] mb-28 md:mb-0 bg-linear-to-tr from-purple-700 to-purple-600 pointer-events-none -z-10"
+        className="absolute inset-0 rounded-bl-[100px] mb-28 md:mb-0 bg-linear-to-tr from-brand-primary to-brand-secondary pointer-events-none -z-10"
         aria-hidden="true"
       />
 
