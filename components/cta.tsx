@@ -17,7 +17,7 @@ export default function Cta() {
             <div className="shrink-0">
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12 md:mb-0">
                 <div>
-                  <a className="btn-sm w-full inline-flex items-center justify-center text-slate-900 bg-brand-accent hover:bg-brand-accent/90 font-semibold shadow-xs" href="#">
+                  <a className="btn-sm w-full inline-flex items-center justify-center text-slate-900 bg-white hover:bg-slate-50 font-semibold shadow-xs" href="#">
                     Get the app
                   </a>
                 </div>

@@ -46,7 +46,7 @@ export default function Section05() {
                 {/* 1st item */}
                 <div className="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-purple-400 last:after:hidden">
                   <div className="mb-3">
-                    <div className="flex items-center justify-center font-bold text-slate-900 bg-brand-accent h-11 w-11 rounded-full">1</div>
+                    <div className="flex items-center justify-center font-bold text-slate-900 bg-white h-11 w-11 rounded-full">1</div>
                   </div>
                   <h4 className="text-white text-xl font-bold mb-1">Enrol before the deadline</h4>
                   <p className="text-purple-200">
@@ -57,7 +57,7 @@ export default function Section05() {
                 {/* 2nd item */}
                 <div className="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-purple-400 last:after:hidden">
                   <div className="mb-3">
-                    <div className="flex items-center justify-center font-bold text-slate-900 bg-brand-accent h-11 w-11 rounded-full">2</div>
+                    <div className="flex items-center justify-center font-bold text-slate-900 bg-white h-11 w-11 rounded-full">2</div>
                   </div>
                   <h4 className="text-white text-xl font-bold mb-1">Compete at start time</h4>
                   <p className="text-purple-200">
@@ -68,7 +68,7 @@ export default function Section05() {
                 {/* 3rd item */}
                 <div className="relative md:px-9 after:hidden md:after:block after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2 after:w-px after:h-16 after:bg-purple-400 last:after:hidden">
                   <div className="mb-3">
-                    <div className="flex items-center justify-center font-bold text-slate-900 bg-brand-accent h-11 w-11 rounded-full">3</div>
+                    <div className="flex items-center justify-center font-bold text-slate-900 bg-white h-11 w-11 rounded-full">3</div>
                   </div>
                   <h4 className="text-white text-xl font-bold mb-1">Win and get rewarded</h4>
                   <p className="text-purple-200">
