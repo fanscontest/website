@@ -4,7 +4,6 @@ import Section02 from '@/components/section-02'
 import Section03 from '@/components/section-03'
 import Section04 from '@/components/section-04'
 import Section05 from '@/components/section-05'
-import Section06 from '@/components/section-06'
 import Faqs from '@/components/faqs'
 import Cta from '@/components/cta'
 
@@ -19,7 +18,6 @@ export default function Home() {
       <Section03 />
       <Section04 />
       <Section05 />
-      <Section06 />
       <Faqs />
       <Cta />
     </>
