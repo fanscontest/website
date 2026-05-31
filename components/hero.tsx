@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import IphoneMockup from '@/public/images/iphone-mockup.png'
+import AppMockup from '@/public/images/app-1.png'
 
 export default function Hero() {
   return (
@@ -109,94 +109,13 @@ export default function Hero() {
               data-aos-delay="500"
             >
               <div className="relative w-full max-w-[280px] sm:max-w-[320px]">
-                <div className="relative" style={{ aspectRatio: '344 / 674' }}>
-                  {/* Mock screen content (positioned to fit inside the iPhone frame's screen area) */}
-                  <div
-                    className="absolute bg-brand-bg overflow-hidden flex flex-col"
-                    style={{ top: '3.7%', bottom: '3.7%', left: '8.1%', right: '8.1%', borderRadius: '7%' }}
-                  >
-                    {/* Status bar */}
-                    <div className="px-4 pt-3 flex justify-between items-center text-[9px] font-bold text-slate-700">
-                      <span>9:41</span>
-                      <span className="flex items-center gap-1">
-                        <span className="inline-block w-3 h-1.5 rounded-sm bg-slate-700" />
-                        <span className="inline-block w-1 h-1 rounded-full bg-slate-700" />
-                        <span className="inline-block w-3 h-1.5 border border-slate-700 rounded-sm" />
-                      </span>
-                    </div>
-
-                    {/* Header */}
-                    <div className="px-4 pt-4">
-                      <p className="text-[8px] font-bold uppercase tracking-[0.15em] text-brand-primary">Fans Contest</p>
-                      <p className="text-base font-bold text-slate-900 leading-tight mt-1">Active contests</p>
-                      <p className="text-[10px] text-slate-500 mt-0.5">3 starting in the next hour</p>
-                    </div>
-
-                    {/* Cards */}
-                    <div className="flex-1 px-3 pt-3 space-y-2">
-                      <div className="bg-white rounded-xl p-2.5 shadow-sm border border-slate-100">
-                        <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 rounded-lg bg-brand-accent flex items-center justify-center text-xs font-extrabold text-slate-900 shrink-0">B</div>
-                          <div className="flex-1 min-w-0">
-                            <p className="text-[9px] text-slate-500 leading-none">Brand quiz · 15q</p>
-                            <p className="text-xs font-bold text-slate-900 truncate mt-1">Know your team</p>
-                          </div>
-                          <span className="text-[8px] font-bold text-white bg-brand-success px-1.5 py-0.5 rounded shrink-0">LIVE</span>
-                        </div>
-                      </div>
-
-                      <div className="bg-white rounded-xl p-2.5 shadow-sm border border-slate-100">
-                        <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 rounded-lg bg-brand-info flex items-center justify-center text-xs font-extrabold text-white shrink-0">N</div>
-                          <div className="flex-1 min-w-0">
-                            <p className="text-[9px] text-slate-500 leading-none">NPO charity · 10q</p>
-                            <p className="text-xs font-bold text-slate-900 truncate mt-1">Lagos coastal cleanup</p>
-                          </div>
-                          <span className="text-[8px] font-bold text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded shrink-0">12m</span>
-                        </div>
-                      </div>
-
-                      <div className="bg-white rounded-xl p-2.5 shadow-sm border border-slate-100">
-                        <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 rounded-lg bg-brand-primary flex items-center justify-center text-xs font-extrabold text-white shrink-0">S</div>
-                          <div className="flex-1 min-w-0">
-                            <p className="text-[9px] text-slate-500 leading-none">Sponsor channel · 20q</p>
-                            <p className="text-xs font-bold text-slate-900 truncate mt-1">Music trivia: '00s</p>
-                          </div>
-                          <span className="text-[8px] font-bold text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded shrink-0">45m</span>
-                        </div>
-                      </div>
-
-                      <div className="bg-white rounded-xl p-2.5 shadow-sm border border-slate-100 opacity-70">
-                        <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 rounded-lg bg-brand-secondary flex items-center justify-center text-xs font-extrabold text-white shrink-0">F</div>
-                          <div className="flex-1 min-w-0">
-                            <p className="text-[9px] text-slate-500 leading-none">Friends channel · 8q</p>
-                            <p className="text-xs font-bold text-slate-900 truncate mt-1">Weekly culture</p>
-                          </div>
-                          <span className="text-[8px] font-bold text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded shrink-0">1h 22m</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* CTA */}
-                    <div className="px-3 pb-4 pt-2">
-                      <button className="w-full rounded-xl bg-brand-primary py-2.5 text-white text-xs font-bold tracking-wide shadow-sm">
-                        Enrol now
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* iPhone frame */}
-                  <Image
-                    src={IphoneMockup}
-                    alt="Fans Contest mobile app"
-                    fill
-                    sizes="(max-width: 768px) 280px, 320px"
-                    className="object-contain pointer-events-none relative"
-                    priority
-                  />
-                </div>
+                <Image
+                  src={AppMockup}
+                  alt="Fans Contest mobile app — home screen"
+                  className="w-full h-auto drop-shadow-2xl"
+                  priority
+                  sizes="(max-width: 768px) 280px, 320px"
+                />
               </div>
             </div>
 
