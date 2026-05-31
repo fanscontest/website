@@ -53,3 +53,7 @@ function getMDXData(dir: string) {
 export function getDocPages() {
   return getMDXData(path.join(process.cwd(), "content/docs"));
 }
+
+export function getLegalPages() {
+  return getMDXData(path.join(process.cwd(), "content/legal"));
+}
