@@ -60,7 +60,7 @@ export default function Section02() {
               </div>
 
               {/* Image */}
-              <div className="md:absolute md:left-[480px] md:top-1/2 md:-translate-y-1/2 -mb-12 mt-8 md:mt-0 md:mb-0 flex justify-center">
+              <div className="md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 -mb-12 mt-8 md:mt-0 md:mb-0 flex justify-center">
                 <div className="relative max-w-[260px] sm:max-w-[300px]">
                   <Image
                     className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none -z-10 max-w-none mix-blend-lighten"
