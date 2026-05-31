@@ -84,21 +84,25 @@ export default function Hero() {
 
               {/* Trust strip */}
               <div
-                className="grid grid-cols-3 gap-4 max-w-xl mx-auto md:mx-0 border-t border-purple-400/20 pt-6"
+                className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-xl mx-auto md:mx-0 border-t border-purple-400/20 pt-6"
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
                 <div>
-                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none">FREE</p>
-                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">To play, always</p>
+                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none tabular-nums">3,272+</p>
+                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">Participants</p>
                 </div>
                 <div>
-                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none">24h</p>
-                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">Rewards dispatched</p>
+                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none tabular-nums">555+</p>
+                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">Contests</p>
                 </div>
                 <div>
-                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none">0</p>
-                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">Tolerance for gambling</p>
+                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none tabular-nums">204+</p>
+                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">Channels</p>
+                </div>
+                <div>
+                  <p className="text-2xl md:text-3xl font-extrabold text-brand-accent leading-none tabular-nums">35+</p>
+                  <p className="text-xs md:text-sm text-purple-200 mt-1.5">Creators</p>
                 </div>
               </div>
             </div>
