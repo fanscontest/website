@@ -52,10 +52,10 @@ const SOCIALS = [
 export default function Footer() {
   return (
     <footer className="relative">
-      <div className="absolute inset-0 bg-slate-800 -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-brand-primary -z-10" aria-hidden="true" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-8 border-t border-slate-700">
+        <div className="py-8 border-t border-white/15">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 
             {/* Brand */}
@@ -71,7 +71,7 @@ export default function Footer() {
             </Link>
 
             {/* Legal links */}
-            <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-400">
+            <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-purple-100/80">
               {LEGAL.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="hover:text-white transition">
@@ -90,7 +90,7 @@ export default function Footer() {
                     target={s.href.startsWith('http') ? '_blank' : undefined}
                     rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     aria-label={s.label}
-                    className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-slate-700 text-slate-300 hover:bg-purple-600 hover:text-white transition"
+                    className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-white/10 text-white hover:bg-brand-accent hover:text-slate-900 transition"
                   >
                     {s.icon}
                   </a>
@@ -100,7 +100,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="mt-6 text-xs text-slate-500">
+          <p className="mt-6 text-xs text-purple-100/60">
             © {new Date().getFullYear()} Fans Contest. All rights reserved.
           </p>
         </div>
