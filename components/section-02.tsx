@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import QuoteAuthor from '@/public/images/quote-author-01.jpg'
 import CardsIllustration from '@/public/images/cards-illustration.svg'
-import Features from '@/public/images/features-02.png'
+import AppMockup from '@/public/images/app-1.png'
 
 export default function Section02() {
   return (
@@ -60,16 +60,21 @@ export default function Section02() {
               </div>
 
               {/* Image */}
-              <div className="md:absolute md:left-[412px] md:top-0 -mb-12 mt-8 md:mt-36 md:mb-0">
-                <div className="relative -mx-16 md:mx-0">
+              <div className="md:absolute md:left-[480px] md:top-1/2 md:-translate-y-1/2 -mb-12 mt-8 md:mt-0 md:mb-0 flex justify-center">
+                <div className="relative max-w-[260px] sm:max-w-[300px]">
                   <Image
-                    className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 mt-16 md:mt-0 pointer-events-none -z-10 max-w-none mix-blend-lighten"
+                    className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none -z-10 max-w-none mix-blend-lighten"
                     src={CardsIllustration}
-                    alt="Cards illustration"
+                    alt=""
                     aria-hidden="true"
                   />
                   <div data-aos="fade-up" data-aos-anchor="[data-aos-id-2]">
-                    <Image src={Features} className="md:max-w-none md:rotate-[48deg]" width={775} alt="Features 01" />
+                    <Image
+                      src={AppMockup}
+                      alt="Fans Contest mobile app — home feed"
+                      className="w-full h-auto drop-shadow-2xl"
+                      sizes="(max-width: 768px) 260px, 300px"
+                    />
                   </div>
                 </div>
               </div>
