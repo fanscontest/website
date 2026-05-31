@@ -23,7 +23,7 @@ export default function Hero() {
                 data-aos="fade-up"
                 data-aos-delay="50"
               >
-                The ultimate app for social contests
+                Join the community
               </p>
 
               {/* Headline */}
@@ -32,9 +32,7 @@ export default function Hero() {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Fans participate.<br />
-                Brands engage.<br />
-                Champions emerge.
+                The ultimate app for social contests
               </h1>
 
               {/* Subhead */}
