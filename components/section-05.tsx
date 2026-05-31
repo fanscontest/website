@@ -4,7 +4,7 @@ import Logos from '@/public/images/logos.png'
 
 export default function Section05() {
   return (
-    <section>
+    <section className="mt-16 md:mt-28">
       <div className="relative max-w-7xl mx-auto">
         {/* Bg */}
         <div
