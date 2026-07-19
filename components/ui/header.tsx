@@ -30,12 +30,12 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li className="ml-3">
                 <a
-                  href="https://soucher.com"
+                  href="https://qaragon.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-[11px] uppercase tracking-[0.2em] text-brand-accent font-bold px-3 py-1.5 rounded-full bg-purple-900/40 ring-1 ring-purple-400/30 hover:bg-purple-900/60 hover:ring-purple-400/50 transition"
                 >
-                  Powered by Soucher
+                  Powered by Qaragon
                 </a>
               </li>
             </ul>
