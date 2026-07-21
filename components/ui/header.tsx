@@ -33,9 +33,9 @@ export default function Header() {
                   href="https://qaragon.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-[11px] uppercase tracking-[0.2em] text-brand-accent font-bold px-3 py-1.5 rounded-full bg-purple-900/40 ring-1 ring-purple-400/30 hover:bg-purple-900/60 hover:ring-purple-400/50 transition"
+                  className="inline-flex items-center text-[11px] tracking-[0.2em] text-brand-accent font-bold px-3 py-1.5 rounded-full bg-purple-900/40 ring-1 ring-purple-400/30 hover:bg-purple-900/60 hover:ring-purple-400/50 transition"
                 >
-                  Powered by Qaragon
+                  Powered by QARAGON
                 </a>
               </li>
             </ul>

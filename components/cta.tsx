@@ -13,9 +13,9 @@ export default function Cta() {
               href="https://qaragon.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center text-sm uppercase tracking-[0.2em] text-brand-accent font-bold px-6 py-3 rounded-full bg-purple-900/40 ring-1 ring-purple-400/30 hover:bg-purple-900/60 hover:ring-purple-400/50 transition shrink-0"
+              className="inline-flex items-center justify-center text-sm tracking-[0.2em] text-brand-accent font-bold px-6 py-3 rounded-full bg-purple-900/40 ring-1 ring-purple-400/30 hover:bg-purple-900/60 hover:ring-purple-400/50 transition shrink-0"
             >
-              Powered by Qaragon
+              Powered by QARAGON
             </a>
           </div>
           {/* Headline takes full width below */}
